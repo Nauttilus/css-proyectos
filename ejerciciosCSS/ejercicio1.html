@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1-css</title>
+</head>
+<body>
+    <style>
+        body{
+            margin:  0px;
+            padding: 0px;
+            background-color: rgb(31, 31, 31);
+        }
+        main{
+            background-color: azure;
+            display: grid;
+            grid-template-columns: 70% 30%;
+
+            grid-template-areas: 
+            "head head"
+            "section aside"
+           
+            ;
+        }
+        .cabecera{
+            background-color: rgb(21, 255, 0);
+            align-items: center;
+            align-content: center;
+            padding: 5px 5px 5px 45px;
+            grid-area: head;
+        }
+        
+       .cuerpo{
+            background-color: aqua;
+            padding: 30px 50px 10px 50px;/*top right bottom left*/          
+            height: 100vh;
+            grid-area: section;            
+            overflow: scroll;
+        }
+        aside{
+            grid-area: aside;
+            
+            background-color: rgb(187, 107, 170);
+        }
+
+    </style>
+
+    <main>
+
+        <head>
+            <div class="cabecera">
+                <h3>esto es la cabecera de esta página</h3>
+            </div>
+        </head>
+
+        <section class="cuerpo">
+        
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Quisque felis magna, dapibus sed turpis ultrices, vulputate porta quam.
+                 Maecenas in scelerisque nunc. Integer rutrum, ante sed consectetur aliquet
+                , diam arcu feugiat leo, ac sollicitudin purus eros eu tellus. 
+                Morbi interdum ut enim vitae scelerisque. In ante eros, rhoncus at arcu 
+                venenatis, ullamcorper tempor lorem. Sed malesuada eros posuere lacus 
+                facilisis pulvinar. Sed consequat convallis nisl, consequat consectetur 
+                quam gravida at. Nullam ac nulla efficitur, cursus leo at, vehicula sapien.
+                 Praesent sed rhoncus sem, imperdiet convallis libero.
+
+            <p>Donec sit amet tellus id mauris consequat rutrum. Nulla imperdiet risus a bibendum venenatis. Phasellus porttitor convallis mauris, ut congue ex auctor at. Nullam imperdiet fringilla dolor id blandit. Nullam sodales placerat lorem, non tristique augue accumsan at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut scelerisque suscipit nisl nec viverra. Aliquam non odio rhoncus, maximus nisi non, ullamcorper eros.</p>
+                </p>    
+        
+         
+        </section>
+
+
+        <aside>
+            a
+        </aside>
+
+    </main>
+</body>
+</html>
